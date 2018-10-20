@@ -40,3 +40,4 @@ q=p->next;
 p->next=q->next;
 q->next->prior=q;
 free(q);
+	//revieve
