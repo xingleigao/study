@@ -1,6 +1,6 @@
-Git is a version control system.
-数据结构学的笔记
+数据结构学习笔记
 或者说是代码助记
 反正它见证了我学习的过程-。-
 加油
-Git is free software.
+为了考上想去的学校 我要每天更新记录！
+
