@@ -19,7 +19,7 @@ typedef struct
 }Str;
 ```
 # 串的基本操作
-## 赋值操作
+## 1.赋值操作
 ```c
 int strassign(Str &str,char* ch)
 {
@@ -59,4 +59,54 @@ int strassign(Str &str,char* ch)
 ### 具体的使用情况
 ```c
 strassign(str,"cur input");
+```
+## 2.取串长度操作
+```c
+int strlength(Str str)
+{
+	return str.length;
+}
+```
+### 使用情况
+```c
+str.length
+```
+##　3.串的比较操作
+```c
+int strconmpare
+{
+	for(int i=0;i<s1.length && i<s2.length;++i)
+		if(s1.ch[i]!=s2.ch[i])
+			return s1.ch-s2.ch;
+	return s1.length-s2.length;
+}
+```
+## 4.串连接操作
+```c
+int concat(Str& str,Str str1,Str str2)
+{
+	if(Str.ch)
+	{
+		free(str.ch);
+		str.ch=NULL;
+	}
+	str.ch=(char*)malloc(sizeof(char)*(str1.length+str2.length+1);
+	if(str.ch==NULL)
+		ertutn 0;
+	int i=0;
+	while(i<str1.length)
+	{
+		str.ch[i]=str1.ch[i];
+		++i;
+	}
+	int j=0;
+	while(j<=str2.length)
+	{
+		str.ch[i+j]=str2.ch[j];
+		++j;
+	}
+
+	str.length=str1.lengtg+str2.length+1;
+	return 1;
+}
 ```
