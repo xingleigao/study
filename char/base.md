@@ -110,3 +110,49 @@ int concat(Str& str,Str str1,Str str2)
 	return 1;
 }
 ```
+## 5.求子串操作
+```c
+int substring(Str &substr,Str str,int pos,int len)
+{
+	if(pos<0||pos>str.length||len<0||len>str.length-pos)
+		return 0;
+	if(substr.ch)
+	{
+		free(substr.ch);
+		subsrr.ch=NULL;
+	}
+	if(len==0)
+	{
+		substr.ch=NULL;
+		substr.length=0;
+		return 1;
+	}
+	else
+	{
+		substr.ch=(char*)malloc(sizeof(char)*len+1);
+		int i=pos;
+		int j=0;
+		while(i<pos+len)
+		{
+			substr.ch[j]=str.ch[i+j];
+			++i;
+			++j;
+		}
+		substr.ch[j]='/0';
+		subsrr.length=len;
+		return 1;
+	}
+}
+```
+## 6.串清空操作
+```c
+int clearstring(Str &str)
+{
+	if(str.ch)
+	{
+		free(str.ch)
+		str.ch=NULL;
+	}
+	str.length=0;
+	return 0;
+}
