@@ -156,3 +156,27 @@ int clearstring(Str &str)
 	str.length=0;
 	return 0;
 }
+```
+# 简单模式匹配算法
+对一个串中某子串的定位操作称为串的匹配算法,其中待定位的子串称为模式串。
+```c
+int index(Str str,Str substr)
+{
+	int i=1,j=1,k=i;
+	while(i<=str.length&&j<=substr.length)
+	{
+		if(stc.ch[i]==substr.ch[j])
+		{
+		++i;
+		++j;
+		}
+		else
+		{
+		j=1;
+		i=++k;
+		}	
+	}
+	if(j>substr.length)
+		return k;
+	else return 0;
+}
