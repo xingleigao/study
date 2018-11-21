@@ -180,3 +180,5 @@ int index(Str str,Str substr)
 		return k;
 	else return 0;
 }
+```
+# KMP算法
