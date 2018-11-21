@@ -1,5 +1,5 @@
 ---
-Description: This file is about str struct.
+Description: This file is about mat.
 ---
 # 数组、矩阵以及广义表
 ## 矩阵
