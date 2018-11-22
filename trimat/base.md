@@ -20,7 +20,23 @@ void trsmat(int A[][maxSize],int B[][maxSize],int m,int n)
 ```
 ### 3.矩阵相加
 ```c
-void addmat(int c[][maxSize],int A[][maxSize],int B[][maxSize],int  m,int n)
+void addmat(int C[][maxSize],int A[][maxSize],int B[][maxSize],int  m,int n)
 {
 	for(int i=0;i<m;++i)
-		for(j=0;
+		for(j=0;j<n;++j)
+			C[i][j]=A[i][j]+B[i][j];
+}
+```
+### 4.矩阵相乘
+```c
+void mutmat(int C[][maxSize],int A[][maxSize],int B[][maxSize],int m,int n,int k)
+{
+	for(int i=0;i<m;++i)
+		for(int j=0;j<n;++j)
+		{
+			C[i][j]=0;
+			for(int h=0;h<n;++h)
+				C[i][j]+=A[i][h]*B[h][j];
+		}	
+}
+```
