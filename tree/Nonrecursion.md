@@ -128,7 +128,7 @@ void createInThread(TBTNode *root)
 	}
 }
 ```
-### 2)遍历终须线索二叉树
+### 2)遍历中序线索二叉树
 >搜索第一个访问的结点信息
 ```c
 TBTNode *First(TBTNode *p)
