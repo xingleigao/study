@@ -21,4 +21,38 @@ void DFS(AGraph *G,int v)
 	}
 }
 ```
-
+## 2、图的广度优先搜索算法(BFS)
+>首先访问其实点v，然后选取与V邻接的全部顶点进行访问，在一次访问与w1,...,wn邻接的全部节点，直到所有顶点都被访问为止。<br>
+执行过程中需要一个队列，执行过程简单概括如下：<br>
+- 任取图中一个节点访问，入队，并将这个节点标记为已访问。
+- 当队列不为空时循环执行：出队，以此检查出队顶点的所有邻接顶点，访问没有被访问过的邻接顶点并将其入队。
+- 当队列为空时跳出循环，广度优先搜索完成
+```c
+void BFS(AGraph *G,int v,int visit[maxSize])
+{
+	AGraph *p;
+	int que[maxSize],front=0,rear=0;
+	int j;
+	Visit(v);
+	visit[v]=1;
+	rear=(rear+1)%maxSize;
+	que[rear]=v;
+	while(front!=rear)
+	{
+		front=(front+1)%maxSize;
+		j=que[front];
+		p=G->adjlist[j].firstarc;
+		while(p!=NULL)
+		{
+			if(visit[p-adjvex]==0)
+			{
+				Visit(p->adjvex);
+				visit[p->adjvex]=1;
+				rear=(rear+1)%maxSize;
+				que[rear]=p->adjvex;
+			}
+			p=p->nextarc;
+		}
+	}
+}
+```
