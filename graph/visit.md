@@ -56,3 +56,24 @@ void BFS(AGraph *G,int v,int visit[maxSize])
 	}
 }
 ```
+### 对于非连通图的遍历方法
+>1)深度优先算法
+```c
+void dfs(AGraph *g)
+{
+	int t;
+	for(i=0;i<g->n;++i)
+		if(visit[i]==0)		//visit[]为全局数组，不属于图的一部分，用于遍历时的标记！
+			DFS(g,i);
+}
+```
+>2)广度优先算法
+```c
+void bfs(AGraph *g)
+{
+	int t;
+	for(i==0;i<g->n;++i)
+		if(visit[i]==0)
+			BFS(g,i,visit);
+}
+```
