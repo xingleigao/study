@@ -36,7 +36,7 @@ void InsertSort(int R[],int n)
 ```c
 void halfInsertSort(int R[],int n)
 {
-	int i;m;low;high;
+	int i,m,low,high;
 	int temp;
 	for(i=0;i<n;++i)
 	{
