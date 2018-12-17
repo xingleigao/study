@@ -7,7 +7,7 @@ Description: the file is about merge sort.
 看做一个分而治之的过程，先将整个序列分为两半，对每一半分别进行归并排序，将得到两个有序序列，然后将这两个序列归并成一个序列。
 ### 2.算法代码
 ```c
-void merge(int arr[],int low,int mid,int high0
+void merge(int arr[],int low,int mid,int high)
 {
 	int i,j,k;
 	int n1=mid-low+1;
