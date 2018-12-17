@@ -59,10 +59,11 @@ void quickSort(int arr[],int low,int high)
 				arr[j]=arr[i];
 				--j;
 			}
+		}
+		arr[i]=temp;
+		quickSort(arr,low,i-1);
+		quickSort(arr,i+1,high);
 	}
-	arr[i]=temp;
-	quickSort(arr,low,i-1);
-	quickSort(arr,i+1,high);
 }
 ```
 ### 3.性能分析
