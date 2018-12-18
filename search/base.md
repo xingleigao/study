@@ -52,3 +52,15 @@ int Bsearch(int R[],int low,int high,int k)
 ```
 3. 折半查找判定树建立
 P278
+## 4.分块查找
+### 1.数据结构
+分块查找又称为索引顺序查找。
+### 2.索引表定义如下：
+```c
+typedef struct
+{
+	int key;
+	int low,high;
+}indexElem;
+indexElem index[maxSize];
+```
