@@ -9,3 +9,4 @@ I'm a student from Xinxiang,Henan.And it is honor for me that i study in HUN tho
 This file is my note when I study about data structures.I hope one day when I see it I feel honor about it.
 
 **keep doing and don't geive up**
+**This is the second try to study that for one day i can be a student of fudan university,**
