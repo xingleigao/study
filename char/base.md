@@ -3,10 +3,10 @@ Description: This file is about str struct.
 ---
 # 定长顺序存储结构体定义
 ```c
-
 typedef struct
 {
-	char str[maxSize+1];	//maxSize为已经定义的常量，表示串的最大长度；str数组长度定义为maxSize+1,是因为多出一个'\0'作为结束符
+	char str[maxSize+1];	//maxSize为已经定义的常量，表示串的最大长度；
+							//str数组长度定义为maxSize+1,是因为多出一个'\0'作为结束符
 	int length;
 }Str;
 ```
