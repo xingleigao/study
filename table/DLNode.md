@@ -1,5 +1,6 @@
-//Ë«Á´±íµÄ²Ù×÷
-	//²ÉÓÃÎ²²å·¨½¨Á¢Á´±í
+# åŒé“¾è¡¨çš„æ“ä½œ
+## é‡‡ç”¨å°¾æ’æ³•å»ºç«‹é“¾è¡¨
+```c
 void createDlishR(DLNode *&L,int a[],int n)
 {
 	DLNode *s,*r;
@@ -18,7 +19,9 @@ void createDlishR(DLNode *&L,int a[],int n)
 	}
 	r-next=NULL;
  } 	
- 	//²éÕÒ½áµãËã·¨
+```
+## æŸ¥æ‰¾èŠ‚ç‚¹ç®—æ³•
+```c
 void findNode(DLNode *&L)
 {
 	DLNode *p=C->next;
@@ -30,14 +33,18 @@ void findNode(DLNode *&L)
 	}
 	return p;
  } 
- 	//²åÈë½áµãËã·¨
+ ```
+ ## æ’å…¥èŠ‚ç‚¹ç®—æ³•
+```c
 s->next=p->next;
 s->prior= p;
 p->next= s;
 p->next->prior=s;
-	//É¾³ý½áµãËã·¨
+```
+## åˆ é™¤èŠ‚ç‚¹ç®—æ³•
+```c
 q=p->next;
 p->next=q->next;
 q->next->prior=q;
 free(q);
-	//revieve
+```
