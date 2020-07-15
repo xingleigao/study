@@ -1,5 +1,6 @@
-//²åÈëÊı¾İÔªËØµÄËã·¨
-int insertElem(Sqlist &L,int p,int e)//L±¾Éí·¢Éú±ä»¯ Ê¹ÓÃÒıÓÃĞÍ 
+### æ’å…¥æ•°æ®å…ƒç´ çš„ç®—æ³•
+```c
+int insertElem(Sqlist &L,int p,int e)//Læœ¬èº«å‘ç”Ÿå˜åŒ–ï¼Œä½¿ç”¨å¼•ç”¨å‹ 
 {
 	int i;
 	if(p<0||p>L.length||L.length==maxSize)
@@ -10,7 +11,9 @@ int insertElem(Sqlist &L,int p,int e)//L±¾Éí·¢Éú±ä»¯ Ê¹ÓÃÒıÓÃĞÍ
 	++(L.length);
 	return 1; 
  } 
- //É¾³ıÊı¾İÔªËØµÄËã·¨
+ ```
+ ### åˆ é™¤æ•°æ®å…ƒç´ çš„ç®—æ³•
+ ```c
  int deleteElem(Sqlist &L,int p,int &e)
  {
  	int i;
@@ -21,8 +24,11 @@ int insertElem(Sqlist &L,int p,int e)//L±¾Éí·¢Éú±ä»¯ Ê¹ÓÃÒıÓÃĞÍ
 	--(L.length);
 	return 1; 
    } 
-//³õÊ¼»¯Ë³Ğò±íµÄËã·¨
+```
+### åˆå§‹åŒ–é¡ºåºè¡¨çš„ç®—æ³•
+```c
 int initElem(Sqlist &L)
 {
 	L.length=0;
- } 
+} 
+```

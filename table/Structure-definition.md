@@ -1,5 +1,6 @@
-//Á´±í¶¨Òå
-	//Ë³ĞòÁ´±í	 
+## é“¾è¡¨å®šä¹‰
+### é¡ºåºé“¾è¡¨
+```c	 
 #define maxSize 100
 typedef struct
 {
@@ -7,26 +8,29 @@ typedef struct
 	
 	int length;
  } Sqlist;
- 
-	//¿¼ÊÔ³£ÓÃ
+ ```
+### è€ƒè¯•å¸¸ç”¨
+```c
  typedef struct
  {
  	int A[maxSize];
  	in n;
- 	
  }
- 
-	//µ¥Á´±í 
+ ```
+### å•é“¾è¡¨ 
+```c
 typedef  struct LNode
 {
 	int data;
 	struct LNode *next;
  }LNode;
-	//Ë«Á´±í
+```
+### åŒé“¾è¡¨
+```c
 typedef struct DLNode
 {
 	int data;
 	struct DLNode *prior;
 	struct DLNode *next;
  }DLNode;
- 	
+```
