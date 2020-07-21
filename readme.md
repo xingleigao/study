@@ -1,5 +1,5 @@
 ---
-description: This is a readme adbout this files
+description: This is some notes adbout this CSAPP.
 ---
 
 # About me
