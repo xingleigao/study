@@ -1,5 +1,5 @@
 ---
-description: his file is all the words of postgrduate entrance examination.
+description: This file is all the words of postgrduate entrance examination.
 ---
 # Some words add from 2020
 1. **aftermath** n.(战争、事故)后果、创伤<br>
