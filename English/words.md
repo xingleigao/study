@@ -18,8 +18,7 @@ description: This file is all the words of postgrduate entrance examination.
 >【搭配】have a bearing on sth 与。。有关系；对。。有影响
 10. **bolter** vt.改善，加强 n.枕垫
 11. **brevity** n.简洁，简练；短暂
->brief f
+>brief v.简结的
 12. 
-
 
 # words sort with frequence.
