@@ -1,0 +1,4 @@
+*.exe
+*.dSYM
+*.out
+test.cpp
