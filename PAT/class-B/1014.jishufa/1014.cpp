@@ -3,8 +3,12 @@
 #include<algorithm>
 using namespace std;
 int len=0;
-char op,s[10010],a[10010]={'0'};
+char op,s[10010],a[10010];
+
 int main(){
+    for(int i=0;i<10010;++i){
+        a[i]='0';
+    }
     op=getchar();
     if(op=='-') printf("-");
     while((op=getchar())!='E')
