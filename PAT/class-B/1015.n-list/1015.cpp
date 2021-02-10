@@ -43,4 +43,4 @@ int main(){
     }
     printf("%05d %d %d\n",first,anode[first].Data,anode[first].Next);
     return 0;
-}
+} 
