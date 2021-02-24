@@ -2,4 +2,4 @@
 *.dSYM
 *.out
 test.cpp
-.*
+._*
