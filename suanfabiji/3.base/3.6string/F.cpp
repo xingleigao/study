@@ -7,7 +7,7 @@ using namespace std;
 int main(){
     string s;
     while(getline(cin,s)){
-        for(int i =s.size(); i >= 0;--i){
+        for(int i =s.size()-1; i >= 0;--i){
             putchar(s[i]);
         }
         printf("\n");
